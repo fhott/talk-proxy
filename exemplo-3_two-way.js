@@ -11,7 +11,6 @@ input.addEventListener('keyup', e => myUserState.name = e.target.value)
 // proxy handler
 const inputHandler = {
   set(target, prop, newValue) {
-    debugger
     if (prop == 'name' && target.id) {
       // atualizando propriedade do objeto
       target[prop] = newValue
